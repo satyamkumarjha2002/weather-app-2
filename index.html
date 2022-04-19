@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="display">
+            <div>
+                <h1>Search Weather Of your City</h1>
+            </div>
+            <div id="city_details">
+
+            </div>
+        </div>
+        <div id="search_city">
+            <div id="search_bar">
+                <input id="city" type="text" placeholder="Enter Your City" />
+                <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div id="map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" frameborder="0"
+                            scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://fmovies-online.net"></a><br>
+                        <!-- <a href="https://www.embedgooglemap.net">embedgooglemap.net</a> -->
+                    </div>
+                </div>
+                <div id="more_details">
+                    <div>
+                        <p>Humadity</p>
+                        <p id="hum">0%</p>
+                    </div>
+                    <div>
+                        <p>Wind</p>
+                        <p id="wind">0 km/hr</p>
+                    </div>
+                    <div>
+                        <p>max temp</p>
+                        <p id="maxt">0°C</p>
+                    </div>
+                    <div>
+                        <p>min temp</p>
+                        <p id="mint">0°C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="next_five_days">
+       <div>
+           
+       </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
